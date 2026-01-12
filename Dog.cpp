@@ -1,7 +1,7 @@
-#include "FragTrap.h"
+#include "Dog.h"
 #include <iostream>
 
-FragTrap::FragTrap () : ClapTrap()
+Dog::Dog () : Animal()
 {
     this->_name = "Frag Robot";
     this->_hitPoint = 100;
