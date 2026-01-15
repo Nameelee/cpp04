@@ -1,11 +1,11 @@
 
-NAME = copydog
+NAME = noanimal
 
 CXX = clang++
 
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = Animal.cpp Dog.cpp Cat.cpp Brain.cpp main.cpp 
+SRCS = Animal.cpp Dog.cpp Cat.cpp main.cpp 
 
 OBJS = $(SRCS:.cpp=.o)
 
