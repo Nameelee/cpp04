@@ -11,8 +11,8 @@ class Animal {
 
     public:
         Animal();
-        Animal(const Animal& copy);
-        Animal& operator=(const Animal& assign);
+        Animal(const Animal &copy);
+        Animal& operator=(const Animal &assign);
         virtual ~Animal();
 
         virtual void makeSound()const;

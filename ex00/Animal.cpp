@@ -4,12 +4,12 @@ Animal::Animal() :type("Animal") {
     std::cout << "Animal" << " Constructor called" <<std::endl;
 } 
 
-Animal::Animal(const Animal& copy) {
+Animal::Animal(const Animal &copy) {
     *this = copy;
     std::cout << "Animal Copy" << " Constructor called" <<std::endl;
 }
 
-Animal& Animal::operator=(const Animal& assign) {
+Animal& Animal::operator=(const Animal &assign) {
     if (this != &assign) {
         this->type = assign.type;      
     }
@@ -22,7 +22,7 @@ Animal::~Animal() {
 }
 
 void Animal::makeSound() const {
-    std::cout << "***generic animal sound***" << std::endl;
+    std::cout << "I don't want to talk to anyone now." << std::endl;
 }
 
 std::string Animal::getType() const {
