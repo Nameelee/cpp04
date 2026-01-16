@@ -5,6 +5,27 @@
 
 #define N_ANIMALS 4
 
+/*
+int main()
+{
+    std::cout << "========== Deep Copy Test (Scope Check) ==========" << std::endl;
+
+    Dog basic;
+    
+    basic.getBrain()->idea[0] = "Original Idea";
+    std::cout << "\nbasic's idea is " << basic.getBrain()->idea[0] << std::endl;
+    {        
+        Dog tmp = basic;
+        std::cout << "\ntmp's idea is " << tmp.getBrain()->idea[0] << std::endl;
+        basic.getBrain()->idea[0] = "Changed Idea";
+        std::cout << "\nbasic's idea is \n" << basic.getBrain()->idea[0] << std::endl;
+        std::cout << "\ntmp's idea is \n" << tmp.getBrain()->idea[0] << std::endl;
+        std::cout << std::endl;
+    } 
+    return (0);
+}
+*/
+
 int main(void)
 {
     std::cout << "\n===1. Array Test (Polymorphism & Loop)===\n" << std::endl;
